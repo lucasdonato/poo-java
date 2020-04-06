@@ -51,12 +51,12 @@ public class TestCompAgregAss {
         servico2.add(s2);
         servico2.add(s3);
 
-        //cria e imprime primeiro agendamento
-        Agendamento a1 = new Agendamento(f2, "01/01/2020", "8:30", c2, servico1);
+        //cria e imprime primeiro agendamento, não estou validando se o carro é realmente do cliente
+        Agendamento a1 = new Agendamento(f2, "01/01/2020", "8:30", c2, servico1, v4);
         a1.imprimirAgendamento();
 
         //cria e imprime o segundo agendamento
-        Agendamento a2 = new Agendamento(f1, "31/12/2019", "15:00", c1, servico2);
+        Agendamento a2 = new Agendamento(f1, "31/12/2019", "15:00", c1, servico2,v2);
         a2.imprimirAgendamento();
     }
 }

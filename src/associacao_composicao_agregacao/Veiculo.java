@@ -32,4 +32,15 @@ public class Veiculo {
             );
         });
     }
+    
+    public static void imprimirVeiculoServico(Veiculo v){
+        System.out.println("*** DADOS DO CARRO AGENDADO ***");
+        System.out.println(
+                    "Placa: " + v.placa + "\n"
+                    + "Modelo: " + v.modelo + "\n"
+                    + "Ano fabricação: " + v.anoFabricacao + "\n"
+                    + "Ano fabricação: " + v.cor + "\n"
+                    + "-----------------------------------------"
+            );
+    }
 }

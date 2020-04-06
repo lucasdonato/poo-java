@@ -20,13 +20,14 @@ public class Servico {
         this.tempo = tempo;
     }
 
-    public static void imprimirServicos(ArrayList<Servico> serv) {
+    public static void imprimirServicos(ArrayList<Servico> serv, Veiculo v) {
         tempo_total = 0;
         valor_total = 0;
 
         valor_total = calcularValorServico(serv);
         tempo_total = calcularTempoServico(serv);
 
+        Veiculo.imprimirVeiculoServico(v);        
         System.out.println("**** SERVIÇOS PRESTADOS ****");
         serv.forEach(s -> {
             System.out.println("Descrição: " + s.nome + "\nValor: $" + s.valor);
