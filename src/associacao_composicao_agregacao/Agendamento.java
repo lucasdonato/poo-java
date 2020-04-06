@@ -24,12 +24,12 @@ public class Agendamento {
 
     public void imprimirAgendamento() {
         System.out.println("**** DADOS AGENDAMENTO ****");
-        funcionario.imprimirFuncionario();        
+        //funcionario.imprimirFuncionario();        
         System.out.println(
                 "Data: " + this.data + "\n" + 
                  "Horário: " + this.horario + "\n"
         );
-        Cliente.imprimirCliente(cliente);
+        //Cliente.imprimirCliente(cliente);
         Servico.imprimirServicos(servico);
     
     }

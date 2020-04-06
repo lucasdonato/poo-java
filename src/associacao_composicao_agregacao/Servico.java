@@ -12,7 +12,7 @@ public class Servico {
     private float valor;
     private int tempo;
     private static float valor_total;
-    private static float tempo_total;
+    private static int tempo_total;
 
     public Servico(String nome, float valor, int tempo) {
         this.nome = nome;
@@ -21,27 +21,23 @@ public class Servico {
     }
 
     public static void imprimirServicos(ArrayList<Servico> serv) {
-        //calcula o valor total e o tempo antes da impressão
-        valor_total = calcularValorServico(serv);
-        tempo_total = calcularTempoServico(serv);
-        
-        System.out.println("**** SERVIÇOS PRESTADOS ****");        
-        serv.forEach(s -> {
-            System.out.println(
-                    "Descrição: " + s.nome + "\n"
-                    + "Valor: $" + s.valor + "\n"
-                    + "Tempo: " + s.tempo + "\n" + 
-                    "-----------------------------------------"
-            );
-        });        
-        System.out.print(
-                "Total serviços: $" + valor_total + "\n"
-                + "Tempo total: " + tempo_total + "\n"
-        );
-        System.out.println("-----------------------------------------");
-        
         tempo_total = 0;
         valor_total = 0;
+
+        valor_total = calcularValorServico(serv);
+        tempo_total = calcularTempoServico(serv);
+
+        System.out.println("**** SERVIÇOS PRESTADOS ****");
+        serv.forEach(s -> {
+            System.out.println("Descrição: " + s.nome +  "\nValor: $" + s.valor);
+            formataHora(s.tempo);
+            System.out.println("-----------------------------------------");
+        });
+
+        //os totais são impressos somente depois que o foreach termina a execução
+        System.out.print("Total serviços: $" + valor_total + "\n");
+        formataHora(tempo_total); //formata e imprime a hora
+
     }
 
     public static float calcularValorServico(ArrayList<Servico> servico) {
@@ -51,16 +47,17 @@ public class Servico {
         return valor_total;
     }
 
-    public static float calcularTempoServico(ArrayList<Servico> servico) {
+    public static int calcularTempoServico(ArrayList<Servico> servico) {
         servico.forEach(s -> {
             tempo_total += s.tempo;
         });
-        if (tempo_total >= 60) {
-            return tempo_total / 60;
-        } else {
-            return tempo_total;
-        }
+        return tempo_total;
+    }
 
-        //pensar na concatenação
+    public static void formataHora(int t) {
+        int hours = t / 60;
+        int minutes = t % 60;
+        System.out.printf("Tempo: %d:%02d", hours, minutes);
+        System.out.println("");
     }
 }
