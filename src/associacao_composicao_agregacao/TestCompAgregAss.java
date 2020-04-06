@@ -9,7 +9,6 @@ import java.util.ArrayList;
 public class TestCompAgregAss {
 
     public static void main(String args[]) {
-
         //cadastra os funcionários
         Funcionario f1 = new Funcionario(100, "Lucas Donato", "197.842.070-60", "lucaspolimig96@gmail.com");
         Funcionario f2 = new Funcionario(200, "João da silva", "644.059.240-82", "joaodasilva@gmail.com");
@@ -41,7 +40,7 @@ public class TestCompAgregAss {
 
         //cria os clientes vinculando endereço e veiculo
         Cliente c1 = new Cliente("Joaquin do céu", "(10) 91451-7901", "174.810.680-54", e2, veiculos1);
-        Cliente c2 = new Cliente("Maíra de jesus", "(58) 99959-4317", "340.961.800-76", e1, veiculos2);
+        Cliente c2 = new Cliente("Maria de jesus", "(58) 99959-4317", "340.961.800-76", e1, veiculos2);
 
         //cria primeira lista de serviços
         ArrayList<Servico> servico1 = new ArrayList();

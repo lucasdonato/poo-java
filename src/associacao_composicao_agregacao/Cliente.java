@@ -28,9 +28,9 @@ public class Cliente {
                 "Nome: " + c.nome + "\n"
                 + "Telefone: " + c.telefone + "\n"
                 + "CPF: " + c.cpf + "\n"
-        );        
+        );
         Veiculo.imprimirVeiculos((ArrayList<Veiculo>) c.veiculos);
         Endereco.imprimirEndereco(c.endereco);
-        
+
     }
 }

@@ -29,7 +29,7 @@ public class Servico {
 
         System.out.println("**** SERVIÇOS PRESTADOS ****");
         serv.forEach(s -> {
-            System.out.println("Descrição: " + s.nome +  "\nValor: $" + s.valor);
+            System.out.println("Descrição: " + s.nome + "\nValor: $" + s.valor);
             formataHora(s.tempo);
             System.out.println("-----------------------------------------");
         });
@@ -58,6 +58,6 @@ public class Servico {
         int hours = t / 60;
         int minutes = t % 60;
         System.out.printf("Tempo: %d:%02d", hours, minutes);
-        System.out.println("");
+        System.out.println("\n");
     }
 }
