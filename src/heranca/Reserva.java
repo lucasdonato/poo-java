@@ -46,6 +46,8 @@ public class Reserva {
             System.out.println("SALA LIBERADA!!!");
         } else {
             System.out.println("\n*** SEM CAPACIDADE SUFICIENTE - NÃO FOI POSSÍVEL RESERVAR A SALA *** ");
+            System.out.print("Quantidade de vagas ultrapassadas: ");
+            System.out.println(turma.getQtdeAlunosMatriculados() - sala.getCapacidade());
         }
     }
 }

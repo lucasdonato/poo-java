@@ -13,8 +13,8 @@ public class SalaAprendizAtivo extends Sala {
     /*chamado o construtor da sala que não passa a
      capacidade como parametro*/
     public SalaAprendizAtivo(int numero, float largura, float profundidade,
-            boolean dataShow, boolean caixasSom, int qtdMesasCompart,
-            int qtdCadeirasPorMesa, int qtdPontosLuz) {
+            boolean dataShow, boolean caixasSom, int qtdPontosLuz, int qtdMesasCompart,
+            int qtdCadeirasPorMesa) {
         super(numero, largura, profundidade, dataShow, caixasSom);
         this.qtdMesasCompart = qtdMesasCompart;
         this.qtdCadeirasPorMesa = qtdCadeirasPorMesa;
