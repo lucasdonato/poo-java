@@ -18,11 +18,11 @@ public class FormaGeometrica {
         this.corBorda = corBorda;
     }
 
-    public double calculaArea() {
+    public double calcularArea() {
         return 0;
     }
 
-    public double calculaPerimetro() {
+    public double calcularPerimetro() {
         return 0;
     }
 }

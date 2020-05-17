@@ -15,10 +15,12 @@ public class Retangulo extends FormaGeometrica {
         this.altura = altura;
     }
 
+    @Override
     public double calcularArea() {
         return (this.base * this.altura);
     }
 
+    @Override
     public double calcularPerimetro() {
         return (2 * this.base) + 2 * altura;
     }
