@@ -10,15 +10,13 @@ public class ColecaoFormas {
 
     ArrayList<FormaGeometrica> formas = new ArrayList<FormaGeometrica>();
 
-    public ColecaoFormas(ArrayList<FormaGeometrica> formas) {
-        this.formas = formas;
-    }
-
-    public void adicionarFormas() {
-
+    public void adicionarFormas(FormaGeometrica formas) {
+        this.formas.add(formas);
     }
 
     public void calcularAreaTotal() {
-
+        this.formas.forEach(f -> {
+            
+        });
     }
 }
