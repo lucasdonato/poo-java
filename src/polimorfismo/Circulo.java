@@ -7,6 +7,7 @@ package polimorfismo;
 public class Circulo extends FormaGeometrica {
 
     private double raio;
+    final double PI = 3.1416;
 
     public Circulo(int x, int y, Cor corPreench, Cor corBorda, double raio) {
         super(x, y, corPreench, corBorda);
@@ -15,10 +16,10 @@ public class Circulo extends FormaGeometrica {
     }
 
     public double calcularArea() {
-        return 0;
+        return PI * Math.pow(raio, 2);
     }
 
     public double calcularPerimetro() {
-        return 0;
+        return 2 * PI * raio;
     }
 }

@@ -16,10 +16,10 @@ public class Triangulo extends FormaGeometrica {
     }
 
     public double calcularArea() {
-        return 0;
+        return (this.base * this.altura) / 2;
     }
 
     public double calcularPerimetro() {
-        return 0;
+        return base * 3;
     }
 }

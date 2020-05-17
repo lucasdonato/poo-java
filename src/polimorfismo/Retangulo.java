@@ -16,10 +16,10 @@ public class Retangulo extends FormaGeometrica {
     }
 
     public double calcularArea() {
-        return 0;
+        return (this.base * this.altura);
     }
 
     public double calcularPerimetro() {
-        return 0;
+        return (2 * this.base) + 2 * altura;
     }
 }
