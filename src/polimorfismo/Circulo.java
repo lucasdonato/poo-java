@@ -16,12 +16,12 @@ public class Circulo extends FormaGeometrica {
     }
 
     @Override
-    public double calcularArea() {
-        return PI * Math.pow(raio, 2);
+    public String calcularArea() {
+        return "Total área do CÍRCULO: " + PI * Math.pow(raio, 2);
     }
 
     @Override
-    public double calcularPerimetro() {
-        return 2 * PI * raio;
+    public String calcularPerimetro() {
+        return "Total perimetro CÍRCULO: " + 2 * PI * raio;
     }
 }

@@ -16,12 +16,12 @@ public class Triangulo extends FormaGeometrica {
     }
 
     @Override
-    public double calcularArea() {
-        return (this.base * this.altura) / 2;
+    public String calcularArea() {
+        return "Total área do TRIANGULO: " + (this.base * this.altura) / 2;
     }
 
     @Override
-    public double calcularPerimetro() {
-        return base * 3;
+    public String calcularPerimetro() {
+        return "Total perimetro do TRIANGULO: " + base * 3;
     }
 }

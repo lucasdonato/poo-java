@@ -16,12 +16,12 @@ public class Retangulo extends FormaGeometrica {
     }
 
     @Override
-    public double calcularArea() {
-        return (this.base * this.altura);
+    public String calcularArea() {
+        return "Total área do RETANGULO: " + (this.base * this.altura);
     }
 
     @Override
-    public double calcularPerimetro() {
-        return (2 * this.base) + 2 * altura;
+    public String calcularPerimetro() {
+        return "Total perimetro do RETANGULO: " + (2 * this.base) + 2 * altura;
     }
 }

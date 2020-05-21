@@ -14,12 +14,12 @@ public class Quadrado extends FormaGeometrica {
     }
 
     @Override
-    public double calcularArea() {
-        return (this.lado * this.lado);
+    public String calcularArea() {
+        return "Total área do QUADRADO: " + (this.lado * this.lado);
     }
 
     @Override
-    public double calcularPerimetro() {
-        return 4 * this.lado;
+    public String calcularPerimetro() {
+        return "Total perimetro do QUADRADO: " + 4 * this.lado;
     }
 }

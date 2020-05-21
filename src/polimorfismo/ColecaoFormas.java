@@ -15,8 +15,16 @@ public class ColecaoFormas {
     }
 
     public void calcularAreaTotal() {
+        System.out.println("\n*** ÁREA TOTAL ***");
         this.formas.forEach(f -> {
-            
+            System.out.println(f.calcularArea());
+        });
+    }
+    
+    public void calcularPerimetroTotal(){
+        System.out.println("\n*** PERIMETRO TOTAL ***");
+        this.formas.forEach(f -> {
+            System.out.println(f.calcularPerimetro());
         });
     }
 }
