@@ -4,7 +4,7 @@ package polimorfismo;
  *
  * @author Lucas Donato
  */
-public class FormaGeometrica {
+public abstract class FormaGeometrica {
 
     private int x;
     private int y;
@@ -18,11 +18,7 @@ public class FormaGeometrica {
         this.corBorda = corBorda;
     }
 
-    public String calcularArea() {
-        return null;
-    }
+    public abstract String calcularArea();
+    public abstract String calcularPerimetro();
 
-    public String calcularPerimetro() {
-        return null;
-    }
 }
