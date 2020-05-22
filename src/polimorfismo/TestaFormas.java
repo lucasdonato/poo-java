@@ -28,7 +28,21 @@ public class TestaFormas {
         colecao.adicionarFormas(circulo);
         colecao.adicionarFormas(triangulo);
 
-        colecao.calcularAreaTotal();
-        colecao.calcularPerimetroTotal();
+        //testes áreas
+        System.out.println("\nÁrea quadrado: " + quadrado.calcularArea());
+        System.out.println("Área retangulo: " + retangulo.calcularArea());
+        System.out.println("Área circulo: " + circulo.calcularArea());
+        System.out.println("Área triangulo: " + triangulo.calcularArea());
+        
+        //testes perimetro
+        System.out.println("\nPerimetro quadrado: " + quadrado.calcularPerimetro());
+        System.out.println("Perimetro retangulo: " + retangulo.calcularPerimetro());
+        System.out.println("Perimetro circulo: " + circulo.calcularPerimetro());
+        System.out.println("Perimetro triangulo: " + triangulo.calcularPerimetro());
+        
+        //testes area e perimetro total
+        System.out.println("\nÁrea total: " + colecao.calcularAreaTotal());
+        System.out.println("Perímetro total: " + colecao.calcularPerimetroTotal());
+        
     }
 }

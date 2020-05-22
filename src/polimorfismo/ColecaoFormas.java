@@ -14,17 +14,21 @@ public class ColecaoFormas {
         this.formas.add(formas);
     }
 
-    public void calcularAreaTotal() {
-        System.out.println("\n*** ÁREA TOTAL ***");
-        this.formas.forEach(f -> {
-            System.out.println(f.calcularArea());
-        });
+    public double calcularAreaTotal() {
+        double areaTotal = 0;
+
+        for (FormaGeometrica f : formas) {
+            areaTotal += f.calcularArea();
+        }
+        return areaTotal;
     }
-    
-    public void calcularPerimetroTotal(){
-        System.out.println("\n*** PERIMETRO TOTAL ***");
-        this.formas.forEach(f -> {
-            System.out.println(f.calcularPerimetro());
-        });
+
+    public double calcularPerimetroTotal() {
+        double perimetroTotal = 0;
+
+        for (FormaGeometrica f : formas) {
+            perimetroTotal += f.calcularPerimetro();
+        }
+        return perimetroTotal;
     }
 }

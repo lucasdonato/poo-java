@@ -6,8 +6,8 @@ package polimorfismo;
  */
 public class Triangulo extends FormaGeometrica {
 
-    private double base;
-    private double altura;
+    private final double base;
+    private final double altura;
 
     public Triangulo(int x, int y, Cor corPreench, Cor corBorda, double base, double altura) {
         super(x, y, corPreench, corBorda);
@@ -16,12 +16,12 @@ public class Triangulo extends FormaGeometrica {
     }
 
     @Override
-    public String calcularArea() {
-        return "Total área do TRIANGULO: " + (this.base * this.altura) / 2;
+    public double calcularArea() {
+        return (this.base * this.altura) / 2;
     }
 
     @Override
-    public String calcularPerimetro() {
-        return "Total perimetro do TRIANGULO: " + base * 3;
+    public double calcularPerimetro() {
+        return base * 3;
     }
 }

@@ -6,7 +6,7 @@ package polimorfismo;
  */
 public class Quadrado extends FormaGeometrica {
 
-    private double lado;
+    private final double lado;
 
     public Quadrado(int x, int y, Cor corPreench, Cor corBorda, double lado) {
         super(x, y, corPreench, corBorda);
@@ -14,12 +14,12 @@ public class Quadrado extends FormaGeometrica {
     }
 
     @Override
-    public String calcularArea() {
-        return "Total área do QUADRADO: " + (this.lado * this.lado);
+    public double calcularArea() {
+        return (this.lado * this.lado);
     }
 
     @Override
-    public String calcularPerimetro() {
-        return "Total perimetro do QUADRADO: " + 4 * this.lado;
+    public double calcularPerimetro() {
+        return 4 * this.lado;
     }
 }

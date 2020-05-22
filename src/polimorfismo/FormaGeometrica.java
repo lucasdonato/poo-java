@@ -18,7 +18,7 @@ public abstract class FormaGeometrica {
         this.corBorda = corBorda;
     }
 
-    public abstract String calcularArea();
-    public abstract String calcularPerimetro();
+    public abstract double calcularArea();
+    public abstract double calcularPerimetro();
 
 }

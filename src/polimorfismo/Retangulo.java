@@ -6,8 +6,8 @@ package polimorfismo;
  */
 public class Retangulo extends FormaGeometrica {
 
-    private double base;
-    private double altura;
+    private final double base;
+    private final double altura;
 
     public Retangulo(int x, int y, Cor corPreench, Cor corBorda, double base, double altura) {
         super(x, y, corPreench, corBorda);
@@ -16,12 +16,12 @@ public class Retangulo extends FormaGeometrica {
     }
 
     @Override
-    public String calcularArea() {
-        return "Total área do RETANGULO: " + (this.base * this.altura);
+    public double calcularArea() {
+        return (this.base * this.altura);
     }
 
     @Override
-    public String calcularPerimetro() {
-        return "Total perimetro do RETANGULO: " + (2 * this.base) + 2 * altura;
+    public double calcularPerimetro() {
+        return (2 * this.base) + 2 * altura;
     }
 }
