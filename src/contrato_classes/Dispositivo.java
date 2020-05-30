@@ -18,4 +18,18 @@ public abstract class Dispositivo {
 
     public abstract void exibirDadosDispositivo();
 
+    /**
+     * @return the marca
+     */
+    public String getMarca() {
+        return marca;
+    }
+
+    /**
+     * @return the numSerie
+     */
+    public int getNumSerie() {
+        return numSerie;
+    }
+
 }

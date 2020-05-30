@@ -24,6 +24,12 @@ public class Computador implements InterfaceExibirDadosDispositivo {
 
     @Override
     public void exibirDadosDispositivo() {
-
+        System.out.println("DADOS COMPUTADOR");
+        System.out.println("Apelido: " + this.apelido
+                + "\nIP: " + this.ip
+                + "\nMAC: " + this.mac
+                + "\nSO: " + this.so
+                + "\nCapacidade memória RAM: " + this.capMemRam
+                + "\nCapacidade HD: " + this.capHD);
     }
 }

@@ -15,6 +15,9 @@ public class Scanner extends Dispositivo {
 
     @Override
     public void exibirDadosDispositivo() {
-
+        System.out.println("DADOS SCANNER");
+        System.out.println("Número Série: " + getNumSerie()
+                + "\nMarca: " + getMarca()
+                + "\nDIG: " + this.resolucaoDigitalizacao);
     }
 }

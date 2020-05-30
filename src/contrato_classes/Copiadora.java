@@ -15,6 +15,9 @@ public class Copiadora extends Dispositivo {
 
     @Override
     public void exibirDadosDispositivo() {
-
+        System.out.println("DADOS COPIADORA");
+        System.out.println("Número Série: " + getNumSerie()
+                + "\nMarca: " + getMarca()
+                + "\nTipo Cópias: " + this.tipoCopias);
     }
 }

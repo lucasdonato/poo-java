@@ -25,6 +25,12 @@ public class Multifuncional extends Dispositivo {
 
     @Override
     public void exibirDadosDispositivo() {
-
+        System.out.println("DADOS MULTIFUNCIONAL");
+        System.out.println("Número Série: " + getNumSerie()
+                + "\nMarca: " + getMarca()
+                + "\nResolução: " + this.resolucaoImpressao
+                + "\nTipo Cartucho: " + this.tipoCartucho
+                + "\nDIG: " + this.resolucaoDigitalizacao
+                + "\nTipo de cópidas: " + this.tipoCopias);
     }
 }

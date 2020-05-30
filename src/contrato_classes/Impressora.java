@@ -19,7 +19,10 @@ public class Impressora extends Dispositivo {
 
     @Override
     public void exibirDadosDispositivo() {
-
+        System.out.println("DADOS IMPRESSORA");
+        System.out.println("Número Série: " + getNumSerie()
+                + "\nMarca: " + getMarca()
+                + "\nResolução: " + this.resolucaoImpressao 
+                + "\nTipo Cartucho: " + this.tipoCartucho);
     }
-
 }
