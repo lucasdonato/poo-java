@@ -6,12 +6,12 @@ package contrato_classes;
  */
 public class Computador implements InterfaceExibirDadosDispositivo {
 
-    private String apelido;
-    private String ip;
-    private String mac;
-    private String so;
-    private int capMemRam;
-    private int capHD;
+    private final String apelido;
+    private final String ip;
+    private final String mac;
+    private final String so;
+    private final int capMemRam;
+    private final int capHD;
 
     public Computador(String apelido, String ip, String mac, String so, int capMemRam, int capHD) {
         this.apelido = apelido;
@@ -24,12 +24,12 @@ public class Computador implements InterfaceExibirDadosDispositivo {
 
     @Override
     public void exibirDadosDispositivo() {
-        System.out.println("DADOS COMPUTADOR");
+        System.out.println("== DADOS COMPUTADOR ==");
         System.out.println("Apelido: " + this.apelido
                 + "\nIP: " + this.ip
                 + "\nMAC: " + this.mac
                 + "\nSO: " + this.so
-                + "\nCapacidade memória RAM: " + this.capMemRam
-                + "\nCapacidade HD: " + this.capHD);
+                + "\nCapacidade memória RAM: " + this.capMemRam + "GB"
+                + "\nCapacidade HD: " + this.capHD + "GB");
     }
 }

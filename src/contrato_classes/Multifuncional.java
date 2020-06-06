@@ -6,11 +6,11 @@ package contrato_classes;
  */
 public class Multifuncional extends Dispositivo {
 
-    private String resolucaoImpressao;
-    private String tipoImpressao;
-    private String tipoCopias;
-    private String tipoCartucho;
-    private String resolucaoDigitalizacao;
+    private final String resolucaoImpressao;
+    private final String tipoImpressao;
+    private final String tipoCopias;
+    private final String tipoCartucho;
+    private final String resolucaoDigitalizacao;
 
     public Multifuncional(String marca, int numSerie, int tensao, String resolucaoImpressao, String tipoImpressao, String tipoCopias,
             String tipoCartucho, String resolucaoDigitalizacao) {
@@ -25,7 +25,7 @@ public class Multifuncional extends Dispositivo {
 
     @Override
     public void exibirDadosDispositivo() {
-        System.out.println("DADOS MULTIFUNCIONAL");
+        System.out.println("== DADOS MULTIFUNCIONAL ==");
         System.out.println("Número Série: " + getNumSerie()
                 + "\nMarca: " + getMarca()
                 + "\nResolução: " + this.resolucaoImpressao

@@ -20,6 +20,14 @@ public class Rede {
     }
 
     public void listarAssociacoes() {
-
+        System.out.println("***** LISTA DAS ASSOCIAÇÕES *****");
+        System.out.println("=================================");
+        for (Associacao ass : associacoes) {
+            ass.computador.exibirDadosDispositivo();
+            System.out.println("=== LISTAGEM DISPOSITIVOS ===");
+            for(Dispositivo d : ass.dispositivos){
+                d.exibirDadosDispositivo();
+            }
+        }
     }
 }

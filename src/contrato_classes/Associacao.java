@@ -8,8 +8,8 @@ import java.util.ArrayList;
  */
 public class Associacao {
 
-    private Computador computador;
-    ArrayList<Dispositivo> dispositivos;
+    protected Computador computador;
+    protected ArrayList<Dispositivo> dispositivos;
 
     public Associacao(Computador computador) {
         dispositivos = new ArrayList<>();
@@ -18,5 +18,17 @@ public class Associacao {
 
     public void adicionarDispositivo(Dispositivo d) {
         dispositivos.add(d);
+    }
+    
+    public void exibirAssociacao() {
+        System.out.println("***** LISTA DAS ASSOCIAÇÕES *****");
+        System.out.println("=================================");
+
+        computador.exibirDadosDispositivo();
+        System.out.println("=== LISTAGEM DISPOSITIVOS ===");
+        dispositivos.stream().forEach((d) -> {
+            d.exibirDadosDispositivo();
+        });
+
     }
 }

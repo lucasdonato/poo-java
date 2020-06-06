@@ -6,7 +6,7 @@ package contrato_classes;
  */
 public class Copiadora extends Dispositivo {
 
-    private String tipoCopias;
+    private final String tipoCopias;
 
     public Copiadora(String marca, int numSerie, int tensao, String tipoCopias) {
         super(marca, numSerie, tensao);
@@ -15,7 +15,7 @@ public class Copiadora extends Dispositivo {
 
     @Override
     public void exibirDadosDispositivo() {
-        System.out.println("DADOS COPIADORA");
+        System.out.println("== DADOS COPIADORA ==");
         System.out.println("Número Série: " + getNumSerie()
                 + "\nMarca: " + getMarca()
                 + "\nTipo Cópias: " + this.tipoCopias);

@@ -6,9 +6,9 @@ package contrato_classes;
  */
 public abstract class Dispositivo {
 
-    private String marca;
-    private int numSerie;
-    private int tensao;
+    private final String marca;
+    private final int numSerie;
+    private final int tensao;
 
     public Dispositivo(String marca, int numSerie, int tensao) {
         this.marca = marca;
